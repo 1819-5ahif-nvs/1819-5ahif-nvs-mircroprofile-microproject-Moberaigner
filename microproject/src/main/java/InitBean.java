@@ -1,6 +1,7 @@
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -8,13 +9,13 @@ import javax.persistence.PersistenceContext;
 @Startup
 public class InitBean {
 
-@PersistenceContext
-EntityManager em;
+@Inject
+private PetFacade petFacade;
 
     @PostConstruct
     public void init(){
-        em.persist(new Pet("max",11,"m"));
-        em.persist(new ZooKeeper("fritz",1000.00));
+        petFacade.save(new Pet("max",11,"m"));
+        petFacade.save(new Pet("moritz",34,"m"));
         System.out.println("done");
     }
 }

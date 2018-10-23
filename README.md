@@ -86,6 +86,9 @@
 ##Projekt starten
 >java -jar ./target/zoo-thorntail.jar
 
+##execute Dockerfile
+>docker build -t airhacks/derbydb .
+
 URL:
 http://localhost:8080/rs/pets
 http://localhost:8080/rs/zookeeper

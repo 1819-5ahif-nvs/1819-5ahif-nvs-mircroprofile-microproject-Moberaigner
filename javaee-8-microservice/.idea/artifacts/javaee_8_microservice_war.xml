@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="javaee-8-microservice:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="javaee-8-microservice.war">
-      <element id="artifact" artifact-name="javaee-8-microservice:war exploded" />
-    </root>
-  </artifact>
-</component>

@@ -2,7 +2,7 @@ import javax.persistence.*;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name= "Pet.findAll", query = "SELECT t FROM Pet t")
+        @NamedQuery(name= "Pet.findAll", query = "SELECT p FROM Pet p")
 })
 public class Pet {
     @Id
